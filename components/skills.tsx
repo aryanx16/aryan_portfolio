@@ -1,12 +1,12 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { FaBootstrap, FaCss3, FaGitAlt, FaGithub, FaHtml5, FaJs, FaReact } from "react-icons/fa";
-import { SiMongodb, SiMysql, SiPostgresql, SiRecoil } from "react-icons/si";
+import { FaBootstrap, FaCss3, FaDocker, FaGitAlt, FaGithub, FaHtml5, FaJs, FaNodeJs, FaReact } from "react-icons/fa";
+import { SiAegisauthenticator, SiExpress, SiGreensock, SiJsonwebtokens, SiMongodb, SiMysql, SiPocket, SiPocketcasts, SiPostgresql, SiRecoil, SiSocketdotio } from "react-icons/si";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { VscVscode } from "react-icons/vsc";
 import { IoLogoFigma, IoLogoVercel } from "react-icons/io5";
-
+import { DiRedis } from "react-icons/di";
 const skillCategories = [
   {
     title: "Front End",
@@ -19,6 +19,19 @@ const skillCategories = [
       { name: "CSS", icon: <FaCss3 className="text-blue-500" /> },
       { name: "Bootstrap", icon: <FaBootstrap className="text-purple-500" /> },
       { name: "Tailwind CSS", icon: <RiTailwindCssFill className="text-cyan-400" /> },
+      { name: "GSAP", icon: <SiGreensock className="text-green-500" /> }
+    ],
+  },
+  {
+    title: "Backend",
+    skills: [
+      { name: "Node.js", icon: <FaNodeJs className="text-blue-600" /> },
+      { name: "Express.js", icon: <SiExpress className="text-green-500" /> },
+      { name: "Websocket", icon: <SiSocketdotio className="" /> },
+      { name: "JWT", icon: <SiJsonwebtokens className="text-orange-500" /> },
+      { name: "Redis", icon: <DiRedis className="text-red-500" /> },
+       { name: "Docker", icon: <FaDocker className="text-blue-400" /> },
+       
     ],
   },
   {
@@ -65,7 +78,7 @@ export default function Skills() {
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
       >
-        <motion.h2 
+        <motion.h2
           className="text-3xl font-bold mb-6"
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -74,7 +87,7 @@ export default function Skills() {
         >
           My Skills
         </motion.h2>
-        <motion.p 
+        <motion.p
           className="text-muted-foreground mb-10"
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -84,7 +97,7 @@ export default function Skills() {
           Technologies and tools I've worked with throughout my projects and experience
         </motion.p>
 
-        <motion.div 
+        <motion.div
           className="grid gap-10"
           variants={container}
           initial="hidden"
@@ -96,9 +109,9 @@ export default function Skills() {
               key={index}
               variants={item}
             >
-              <motion.h3 
+              <motion.h3
                 className="text-xl font-semibold mb-4"
-                whileHover={{ 
+                whileHover={{
                   x: 5,
                   transition: { type: "spring", stiffness: 300 }
                 }}
@@ -107,15 +120,15 @@ export default function Skills() {
               </motion.h3>
               <div className="flex flex-wrap gap-4">
                 {category.skills.map((skill, idx) => (
-                  <motion.div 
-                    key={idx} 
+                  <motion.div
+                    key={idx}
                     className="flex flex-col items-center gap-2 group"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.3, delay: 0.1 * idx }}
                   >
-                    <motion.div 
+                    <motion.div
                       className={`
                         w-14 h-14 rounded-full bg-muted flex items-center justify-center text-xl
                         group-hover:bg-muted/50 transition-colors duration-300
@@ -128,7 +141,7 @@ export default function Skills() {
                     >
                       {skill.icon}
                     </motion.div>
-                    <motion.span 
+                    <motion.span
                       className="text-xs text-center text-muted-foreground group-hover:text-foreground transition-colors duration-300"
                     >
                       {skill.name}

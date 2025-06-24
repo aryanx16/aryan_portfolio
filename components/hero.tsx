@@ -84,15 +84,15 @@ export default function Hero() {
             </Link>
           </div>
         </motion.div>
-
-        <motion.div
+        
+        <img src="./photo2.jpg" className=" object-cover w-96 h-80 border rounded-md shadow-md hidden md:block" alt="" />
+        {/* <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
           className="flex justify-center h-48 md:h-auto"
         >
           <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md aspect-square">
-            {/* Animated border */}
             <motion.div
               className="absolute inset-0 rounded-lg"
               animate={{
@@ -106,9 +106,7 @@ export default function Hero() {
               }}
             />
 
-            {/* Grid with floating tech stacks */}
             <div className="absolute inset-0 grid grid-cols-2 gap-2 sm:gap-4 p-2 sm:p-4">
-              {/* Top Left - React Logo */}
               <motion.div
                 className="bg-muted rounded-lg p-2 sm:p-4 flex items-center justify-center"
                 whileHover={{ scale: 1.05 }}
@@ -127,7 +125,6 @@ export default function Hero() {
                 </motion.div>
               </motion.div>
 
-              {/* Top Right - Node.js */}
               <motion.div
                 className="bg-muted rounded-lg p-2 sm:p-4 flex items-center justify-center"
                 initial={{ y: -20 }}
@@ -144,7 +141,6 @@ export default function Hero() {
                 </div>
               </motion.div>
 
-              {/* Bottom Left - Database */}
               <motion.div
                 className="bg-muted rounded-lg p-2 sm:p-4 flex items-center justify-center"
                 whileHover={{ scale: 1.05 }}
@@ -162,7 +158,6 @@ export default function Hero() {
                 </motion.div>
               </motion.div>
 
-              {/* Bottom Right - TypeScript */}
               <motion.div
                 className="bg-muted rounded-lg p-2 sm:p-4 flex items-center justify-center"
                 animate={{
@@ -183,7 +178,6 @@ export default function Hero() {
               </motion.div>
             </div>
 
-            {/* Floating tech badges around the grid */}
             <motion.div
               className="absolute -top-3 sm:-top-5 -left-3 sm:-left-5 bg-background px-2 py-0.5 sm:px-3 sm:py-1 rounded-full text-xs sm:text-sm shadow-md border"
               animate={{
@@ -247,7 +241,7 @@ export default function Hero() {
               MongoDB
             </motion.div>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   )

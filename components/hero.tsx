@@ -42,12 +42,15 @@ export default function Hero() {
 
           <div className="flex flex-wrap gap-2 sm:gap-3">
             <Link
-              href="/MerajResumeFR.pdf"
+              href="/"
               target="_blank"
               download
             >
               <Button size="sm" className="text-xs sm:text-sm">
-                <Download className="mr-2 h-3 w-3 sm:h-4 sm:w-4" /> Resume
+                {/* <Download className="mr-2 h-3 w-3 sm:h-4 sm:w-4" /> */}
+                 <a href="https://drive.google.com/file/d/1q721N9j4RPxK82FFtXxOjjtSpyNLv3dK/view?usp=sharing">
+                 Resume
+                 </a>
               </Button>
             </Link>
             <Link

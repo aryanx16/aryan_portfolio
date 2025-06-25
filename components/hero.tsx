@@ -84,8 +84,14 @@ export default function Hero() {
             </Link>
           </div>
         </motion.div>
-        
+        <motion.div
+              initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+
         <img src="./photo2.jpg" className=" object-cover w-96 h-80 border rounded-md shadow-md hidden md:block" alt="" />
+        </motion.div>
         {/* <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}

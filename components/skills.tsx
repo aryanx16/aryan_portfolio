@@ -30,8 +30,8 @@ const skillCategories = [
       { name: "Websocket", icon: <SiSocketdotio className="" /> },
       { name: "JWT", icon: <SiJsonwebtokens className="text-orange-500" /> },
       { name: "Redis", icon: <DiRedis className="text-red-500" /> },
-       { name: "Docker", icon: <FaDocker className="text-blue-400" /> },
-       
+      { name: "Docker", icon: <FaDocker className="text-blue-400" /> },
+
     ],
   },
   {
@@ -48,8 +48,6 @@ const skillCategories = [
       { name: "Git", icon: <FaGitAlt className="text-orange-600" /> },
       { name: "GitHub", icon: <FaGithub className="text-black dark:text-white" /> },
       { name: "VS Code", icon: <VscVscode className="text-blue-500" /> },
-      { name: "Figma", icon: <IoLogoFigma className="text-purple-600" /> },
-      { name: "Vercel", icon: <IoLogoVercel className="text-black dark:text-white" /> },
     ],
   },
 ]

@@ -13,7 +13,7 @@ const projects = [
       title: "SecureCode",
     description:
       "AI-powered code review that detects vulnerabilities, boosts performance, and ensures compliance — with automated fixes and enterprise-grade security scanning.",
-    image: "/securecode.jpg",
+    image: "/securecode.png",
     tags: ["React.js", "Gemini API", "Tailwind CSS", "MongoDB","Framer Motion"],
     demoUrl: "https://securecode.babare.site/",
     githubUrl: "https://github.com/aryanx16/SecureCode",

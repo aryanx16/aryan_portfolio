@@ -5,27 +5,42 @@ import { Badge } from "@/components/ui/badge"
 
 const experiences = [
   {
+    title: "Research Intern",
+    company: "@L3Cube Labs",
+    period: "June 2025 - Present",
+    responsibilities: [
+      "Exploring fine-tuning of transformer-based models (like BERT and IndicBERT).",
+      "Developing and evaluating datasets and models for tasks such as Named Entity Recognition (NER), sentiment analysis, and question answering.",
+    ],
+    skills: [
+      "Python",
+      "PyTorch",
+      "Hugging Face",
+    ]
+
+  },
+  {
     title: "Full Stack Developer Intern",
-    company: "PICT",
+    company: "@PICT",
     period: "Jan 2025 - April 2025",
     responsibilities: [
       "Worked on a custom browser project for PICT",
       "Built a secure, campus-restricted browser using Python, PyQt, and WebSocket for real-time website access monitoring",
       "Enabled admin control for whitelisting and blacklisting websites in real-time across connected clients",
     ],
-    skills: ["PyQt", "Python","Websocket","Express.js"],
+    skills: ["PyQt", "Python", "Websocket", "Express.js"],
   },
-  {
-    title:  "Frontend Developer Intern",
-    company: "Holiday Travels",
-    period: "Nov 2024 - Jan 2025",
-    responsibilities: [
-      "Worked on frontend development.",
-      "Enhanced UI/UX and improving user interaction",
-      "Designed and implemented responsive 'Important Links' and 'Events' pages using React.js"
-    ],
-    skills: ["React", "TypeScript", "GSAP","TailwindCSS"],
-  },
+  // {
+  //   title:  "Frontend Developer Intern",
+  //   company: "Holiday Travels",
+  //   period: "Nov 2024 - Jan 2025",
+  //   responsibilities: [
+  //     "Worked on frontend development.",
+  //     "Enhanced UI/UX and improving user interaction",
+  //     "Designed and implemented responsive 'Important Links' and 'Events' pages using React.js"
+  //   ],
+  //   skills: ["React", "TypeScript", "GSAP","TailwindCSS"],
+  // },
   // {
   //   title: "Web Developer",
   //   company: "Ministry of Electronics and Information Technology",

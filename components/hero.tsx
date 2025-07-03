@@ -1,11 +1,10 @@
 "use client"
 
+
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
-import { Github, Linkedin, Download, Mail, MapPin } from "lucide-react"
-import { FaNode } from "react-icons/fa"
-import { RiNextjsFill, RiReactjsFill, RiTailwindCssFill, RiTwitterXLine } from "react-icons/ri"
-import { SiLeetcode, SiMongodb } from "react-icons/si"
+import { Github, Linkedin, Mail, MapPin } from "lucide-react"
+import { SiLeetcode,  } from "react-icons/si"
 import Link from "next/link"
 
 export default function Hero() {
@@ -19,7 +18,7 @@ export default function Hero() {
           className="space-y-6 md:col-span-2"
         >
           <div className="space-y-2">
-            <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">Aryan Babare</h1>
+            <h1 className="text-3xl  sm:text-4xl font-bold tracking-tight">Aryan Babare</h1>
             <p className="text-lg sm:text-xl text-muted-foreground">Software Engineer</p>
           </div>
 

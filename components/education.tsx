@@ -7,7 +7,7 @@ const education = [
     institution: "Pune Institute of Computer Technology",
     degree: "B.Tech , Information Technology ",
     period: "Oct 2022 - May 2026",
-    gpa: "CGPA: 8.56/10",
+    gpa: "CGPA: 8.68/10",
     icon: "🎓",
   },
   {

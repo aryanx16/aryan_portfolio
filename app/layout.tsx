@@ -29,8 +29,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+      {/* <body className={inter.className}> */}
+      <body className={`${inter.className} transition-colors duration-0 bg-background text-foreground`}>
+        {/* <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange> */}
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Suspense fallback={<Loading />}>
             <Header />
             <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">{children}</main>

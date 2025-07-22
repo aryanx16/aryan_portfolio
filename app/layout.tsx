@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       {/* <body className={inter.className}> */}
-      <body className={`${inter.className} transition-colors duration-0 bg-background text-foreground`}>
+      <body className={`${inter.className} selection:bg-sky-400 selection:text-black transition-colors duration-0 bg-background text-foreground`}>
         {/* <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange> */}
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Suspense fallback={<Loading />}>
